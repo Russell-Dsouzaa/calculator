@@ -10,38 +10,39 @@
     </head>
     <body>
         <div class="centered-container">
-            <div class="display">
-                2
+            <div class="display" aria-live = "polite">  <!-- aria-live = "polite" informs the user whenever a change has taked place in that HTML element -->
+                
             </div>
             <div class="buttons">
                 <div class="row">
-                    <button id = "division" type = "button">/</button>
-                    <button id = "percentage" type = "button">%</button>
-                    <button id = "sign" type = "button">+/-</button>
-                    <button id = "ac" type = "button">AC</button>
+                    <button id = "division" type = "button" class = "operator" aria-label = "division">/</button>
+                    <button id = "percentage" type = "button" aria-label = "percentage">%</button>
+                    <button id = "sign" type = "button" aria-label = "change sign">+/-</button>
+                    <button id = "ac" type = "button" aria-label = "clear all">AC</button>
                 </div>
                 <div class="row">
-                    <button id = "multiplication" type = "button">*</button>
-                    <button id = "seven" type = "button">7</button>
-                    <button id = "eight" type = "button">8</button>
-                    <button id = "nine" type = "button">9</button>
+                    <button id = "multiplication" type = "button" class = "operator" aria-label = "multiplication">*</button>
+                    <button id = "seven" type = "button" class = "seven" aria-label = "seven">7</button>
+                    <button id = "eight" type = "button" aria-label = "eight">8</button>
+                    <button id = "nine" type = "button" aria-label = "nine">9</button>
                 </div>
                 <div class="row">
-                    <button id = "addition" type = "button">+</button>
-                    <button id = "four" type = "button">4</button>
-                    <button id = "five" type = "button">5</button>
-                    <button id = "six" type = "button">6</button>
+                    <button id = "addition" type = "button" class = "operator" aria-label = "addition">+</button>
+                    <button id = "four" type = "button" aria-label = "four">4</button>
+                    <button id = "five" type = "button" aria-label = "five">5</button>
+                    <button id = "six" type = "button" aria-label = "six">6</button>
                 </div>
                 <div class="row">
-                    <button id = "subtraction" type = "button">-</button>
-                    <button id = "one" type = "button">1</button>
-                    <button id = "two" type = "button">2</button>
-                    <button id = "three" type = "button">3</button>
+                    <button id = "subtraction" type = "button" class = "operator" aria-label = "subtraction">-</button>
+                    <button id = "one" type = "button" aria-label = "one">1</button>
+                    <button id = "two" type = "button" aria-label = "two">2</button>
+                    <button id = "three" type = "button" aria-label = "three">3</button>
                 </div>
                 <div class="row">
-                    <button id = "equal-to" type = "button">=</button>
-                    <button id = "zero" type = "button" style = "width: 49%; flex-grow: 0;">0</button>
-                    <button id = "decimal" type = "button">.</button>
+                    <button id = "equal-to" type = "button" aria-label = "equal to sign" style = "background-color: black; color: white;">=</button>
+                    <button id = "decimal" type = "button" aria-label = "decimal point">.</button>
+                    <button id = "zero" type = "button" aria-label = "zero">0</button>
+                    <button id = "delete" type = "button" aria-label = "delete last entry">DEL</button>
                 </div>
             </div>
         </div>
