@@ -11,12 +11,15 @@ buttons.forEach(button => {
         if (button.classList.contains("operator")) {
             if (operator === '') {
                 operator = `${button.innerText}`;
-                alert(operator);
             }
 
             display.innerText = firstNumber + " " + operator;
         } else if (button.id === "ac") {
-
+            firstNumber = "";
+            secondNumber = "";
+            operator = '';
+            displayNumber = "";
+            display.innerText = "";
         } else if (button.id === "equal-to") {
 
         } else if (button.id === "delete") {
