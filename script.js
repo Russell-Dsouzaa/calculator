@@ -9,7 +9,12 @@ const buttons = document.querySelectorAll("button");
 buttons.forEach(button => {
     button.addEventListener("click", () => {
         if (button.classList.contains("operator")) {
-            
+            if (operator === '') {
+                operator = `${button.innerText}`;
+                alert(operator);
+            }
+
+            display.innerText = firstNumber + " " + operator;
         } else if (button.id === "ac") {
 
         } else if (button.id === "equal-to") {
@@ -27,16 +32,16 @@ buttons.forEach(button => {
             if (operator === '') {
                 firstNumber = firstNumber + button.innerText;
                 displayNumber = firstNumber;
-                display.innerText = displayNumber;
             } else {
                 secondNumber = secondNumber + button.innerText;
                 if (firstNumber === "") {
                     display.innerText = 0 + " " + operator + " " + secondNumber;
                 } else {
                     displayNumber = firstNumber + " " + operator + " " + secondNumber;
-                    display.innerText = displayNumber;
                 }
             }
+
+            display.innerText = displayNumber;
 
         }
     });
