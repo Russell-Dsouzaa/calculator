@@ -8,6 +8,7 @@ const buttons = document.querySelectorAll("button");
 
 buttons.forEach(button => {
     button.addEventListener("click", () => {
+
         if (button.classList.contains("operator")) {
             if (operator === '') {
                 operator = `${button.innerText}`;
@@ -23,7 +24,17 @@ buttons.forEach(button => {
         } else if (button.id === "equal-to") {
 
         } else if (button.id === "delete") {
+            if (operator === '') {
+                firstNumber = firstNumber.slice(0,-1);
+            } else {
+                if(secondNumber === "") {
+                    operator = '';
+                } else {
+                    secondNumber = secondNumber.slice(0,-1);
+                }
+            }
 
+            display.innerText = firstNumber + " " + operator + " " + secondNumber;
         } else if (button.id === "decimal") {
 
         } else if (button.id === "percentage") {
@@ -47,5 +58,6 @@ buttons.forEach(button => {
             display.innerText = displayNumber;
 
         }
+
     });
 });
