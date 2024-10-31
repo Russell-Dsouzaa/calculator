@@ -44,6 +44,19 @@ buttons.forEach(button => {
 
         } else if (button.id === "decimal") {
 
+            if (operator === '') {
+                if (!firstNumber.includes('.')) {
+                    firstNumber += '.';
+                }
+            } else {
+                if (!secondNumber.includes('.')) {
+                    secondNumber += '.';
+                }
+            }
+
+            display.innerText = firstNumber + " " + operator + " " + secondNumber;
+
+
         } else if (button.id === "percentage") {
 
         } else if (button.id === "sign") {
