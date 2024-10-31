@@ -59,6 +59,16 @@ buttons.forEach(button => {
 
         } else if (button.id === "percentage") {
 
+            if (operator === '') {
+                firstNumber = (Number(firstNumber) / 100).toFixed(3).toString();
+                display.innerText = firstNumber;
+            } else {
+                if (!(secondNumber === "")) {
+                    secondNumber = ((Number(secondNumber) / Number(firstNumber)) * 100).toFixed(3).toString();
+                    display.innerText = secondNumber;
+                }
+            }
+
         } else if (button.id === "sign") {
 
             if (operator === '') {
