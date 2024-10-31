@@ -1,5 +1,4 @@
-### Took me almost two days to complete the project. I'm tired af
-
+## Took me almost two days to complete the project. I'm tired af
 <p align = "center">
 <img src = "./meta.jpeg" width = "450px" height = "575px">
 </p>
