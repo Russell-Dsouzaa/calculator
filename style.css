@@ -85,6 +85,7 @@ body {
     border-radius: 0.5rem;
     border: 0px;
     font-size: 2rem;
+    transition: 0.3s;
 }
 
 #division,
@@ -102,6 +103,8 @@ body {
 }
 
 button:hover {
-    opacity: 0.6;
+    /* opacity: 0.6; */
     border: 0.15rem solid white;
+    box-shadow: 0 0 2rem white;
+    transition: 0.2s;
 }

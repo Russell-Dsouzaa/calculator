@@ -26,8 +26,10 @@ buttons.forEach(button => {
             display.innerText = "";
 
         } else if (button.id === "equal-to") {
+
             displayNumber = calculate(firstNumber,secondNumber);
             display.innerText = displayNumber;
+            
         } else if (button.id === "delete") {
 
             if (operator === '') {

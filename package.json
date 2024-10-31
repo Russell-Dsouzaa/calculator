@@ -1,0 +1,12 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "A calculator ig",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest",
+    "test:script": "jest script.spec.js"
+  },
+  "author": "Russell-Dsouzaa",
+  "license": "ISC"
+}
