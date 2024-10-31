@@ -48,6 +48,14 @@ buttons.forEach(button => {
 
         } else if (button.id === "sign") {
 
+            if (operator === '') {
+                firstNumber = toggleSign(firstNumber);
+            } else {
+                secondNumber = toggleSign(secondNumber);
+            }
+
+            display.innerText = firstNumber + " " + operator + " " + secondNumber;
+
         } else {
 
             if (operator === '') {
@@ -120,3 +128,13 @@ function calculate(num1,num2) {
         }
     }
 }
+
+function toggleSign(num) {
+    if (num === "") {
+        return num;
+    }
+
+    return (Number(num) * -1).toString();
+}
+
+module.exports = calculate;
